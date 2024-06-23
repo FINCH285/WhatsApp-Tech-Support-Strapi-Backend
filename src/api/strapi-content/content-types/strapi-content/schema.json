@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strapi_contents",
+  "info": {
+    "singularName": "strapi-content",
+    "pluralName": "strapi-contents",
+    "displayName": "strapi-content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CourseTitle": {
+      "type": "string"
+    },
+    "CourseDescription": {
+      "type": "text"
+    },
+    "CourseLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CourseMaterials": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
